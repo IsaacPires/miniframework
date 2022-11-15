@@ -1,0 +1,13 @@
+{
+    "name": "mf/miniframework",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/",
+            "MF\\" : "vendor/MF/"
+        }
+    },
+    "require": {
+        "php": ">= 7.0"
+    }
+}
