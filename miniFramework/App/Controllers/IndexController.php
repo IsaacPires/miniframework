@@ -2,16 +2,9 @@
 
 namespace App\Controllers;
 
-use stdClass;
+use MF\Controller\Action;
 
-class indexController{
-
-  private $view;
-
-  public function __construct()
-  {
-    $this->view = new \stdClass();
-  }
+class indexController extends Action{
 
   public function index(){
 
@@ -25,12 +18,4 @@ class indexController{
     $this->render('sobreNos');
   }
 
-  protected function render($view){
-
-    $classAtual = get_class($this);
-    $arrayClass = explode(DIRECTORY_SEPARATOR, $classAtual);
-    $class = str_replace('Controller', '', $arrayClass[2]);
-
-    require_once "../App/Views/".$class."/".$view.".phtml";
-  }
 }
