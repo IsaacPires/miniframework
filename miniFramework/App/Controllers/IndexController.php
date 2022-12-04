@@ -9,13 +9,13 @@ class indexController extends Action{
   public function index(){
 
     $this->view->dados = ['arroz', 'frango', 'agua'];
-    $this->render('index');
+    $this->render('index', 'layout1');
 
   }
 
   public function sobreNos(){
     $this->view->dados = ['pizza', 'hamburguer', 'suco'];
-    $this->render('sobreNos');
+    $this->render('sobreNos', 'layout1');
   }
 
 }
