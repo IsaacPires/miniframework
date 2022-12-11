@@ -1,7 +1,7 @@
 <?php
 
-
 foreach ($this->view->dados as $key => $value) {
-  echo $value . "<hr>";
+
+  echo $value['id'] .' - '. $value['descricao'] .' - R$'. $value['preco'] . "<hr>";
 
 }

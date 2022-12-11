@@ -1,2 +1,6 @@
-<?php
-echo 'teste sobre nos';
+<?php foreach ($this->view->dados as $key => $value) { ?>
+
+<h1><?= $value['titulo']; ?></h1>
+</br>
+<p> <?= $value['descricao']; ?> </p>
+<?php } ?>
